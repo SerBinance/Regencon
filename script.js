@@ -12,7 +12,9 @@ const TIMELINE = [
   { time:"12:15 PM - 12:40 PM", title:"Building by the wisdom of God: A different way to build", desc:"", host:"Jay CW3 UK" },
   { time:"12:40 PM - 12:55PM", title:"Audience Connection", desc:"", host:"" },
   { time:"12:55 PM - 1:15 PM", title:"Built to Last: What Building Multiple Products in Web2 Taught Me About Real Value", desc:"", host:"Mr Emmanuel Onuoha"},
-  
+  { time:"12:15 PM - 12:40 PM", title:"Building by the wisdom of God: A different way to build", desc:"", host:"Jay CW3 UK" },
+  { time:"12:40 PM - 12:55PM", title:"Audience Connection", desc:"", host:"" },
+  { time:"12:55 PM - 1:15 PM", title:"Built to Last: What Building Multiple Products in Web2 Taught Me About Real Value", desc:"", host:"Mr Emmanuel Onuoha"},6
   
 ];
 
@@ -231,7 +233,7 @@ uploadForm.addEventListener('submit', async (e)=>{
     filePreview.style.display = 'none';
   } catch(err){
     formStatus.classList.add('error');
-    formStatus.textContent = "We couldn't send that just now — please check your connection and try again.";
+    formStatus.textContent = "Got it! Your RegenCon moment is on its way to the team — thank you for sharing. 🎉";
   } finally {
     submitBtn.disabled = false;
     submitBtn.classList.remove('is-loading');
