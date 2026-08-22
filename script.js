@@ -9,6 +9,9 @@ const TIMELINE = [
   { time:"11:45 PM - 11:50 AM", title:"Interlude, Next Speaker Intro", desc:"", host:"" },
   { time:"11:50 AM - 12:10 PM", title:"Built to thrive: Finding Opportunity, Building a Career & Staying Relevant in Web3", desc:"S.", host:"Ohjay" },
   { time:"12:10 PM - 12:15 PM", title:"Interlude, Quips & Next Speaker Intro", desc:"", host:"" },
+  { time:"12:15 PM - 12:40 PM", title:"Building by the wisdom of God: A different way to build", desc:"", host:"Jay CW3 UK" },
+  { time:"12:40 PM - 12:55PM", title:"Audience Connection", desc:"", host:"" },
+  { time:"12:55 PM - 1:15 PM", title:"Built to Last: What Building Multiple Products in Web2 Taught Me About Real Value", desc:"", host:"Mr Emmanuel Onuoha"},
   
   
 ];
