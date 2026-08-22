@@ -1,15 +1,16 @@
 
 // ---- 2. Timeline: the full run of show ------------------------------------
 const TIMELINE = [
-  { time:"10:00 AM", title:"Doors Open & Welcome", desc:"Registration, name tags, and first GMs of the day.", host:"Regenerates Team" },
-  { time:"10:30 AM", title:"Worship & Faith Moment", desc:"A short, grounding worship session to open the day right.", host:"" },
-  { time:"11:00 AM", title:"Opening Keynote", desc:"Setting the tone: what 'Built Different' means for this community.", host:"Regenerates Founders" },
-  { time:"11:45 AM", title:"Talk: Tech Meets Faith", desc:"Building in Web3 without leaving conviction at the door.", host:"Guest Speaker" },
-  { time:"12:30 PM", title:"Panel Discussion", desc:"Regenerates unpack the intersection of tech, faith and community, live.", host:"Panel of Regenerates" },
-  { time:"1:15 PM", title:"Lunch & Networking", desc:"Food, conversation, and timelines finally meeting face to face.", host:"" },
-  { time:"2:15 PM", title:"Community Conversations", desc:"Smaller breakout circles going deeper on the day's big questions.", host:"" },
-  { time:"3:00 PM", title:"Games & Activities", desc:"Light competition and icebreakers to close the energy out strong.", host:"" },
-  { time:"3:40 PM", title:"Closing Session & Group Photo", desc:"Recap, shoutouts, and one last GM before everyone heads out.", host:"Regenerates Team" },
+  { time:"10:00 AM - 11:00 AM", title:"Arrival & Registration", desc:"Check in, scan the event QR code, and connect with fellow attendees.", host:"Regenerates Team" },
+  { time:"11:00 AM - 11:05 AM", title:"Opening Prayer", desc:"A short prayer session to open the day right.", host:"" },
+  { time:"11:05 AM - 11:15 AM", title:"Welcome Address", desc:"Welcome to RegenCon Abuja 2026 and an introduction to the vision behind the convention", host:"Bernard" },
+  { time:"11:15 AM - 11:25 PM", title:"Opening & Room Warm-up", desc:"Meet the room, connect with fellow attendees, and get ready for the day.", host:"" },
+  { time:"11:25 PM - 11:45 PM", title:"Building With What You Have: Leveraging Your Skills in Web3 & the Digital Economy", desc:"", host:"Cryptonaut" },
+  { time:"11:45 PM - 11:50 AM", title:"Interlude, Next Speaker Intro", desc:"", host:"" },
+  { time:"11:50 AM - 12:10 PM", title:"Built to thrive: Finding Opportunity, Building a Career & Staying Relevant in Web3", desc:"S.", host:"Ohjay" },
+  { time:"12:10 PM - 12:15 PM", title:"Interlude, Quips & Next Speaker Intro", desc:"", host:"" },
+  
+  
 ];
 
 
@@ -27,47 +28,7 @@ const SOCIALS = [
 const WEB3FORMS_ACCESS_KEY = "6559a43c-8303-4578-9261-05e5ccf06ece"; 
 const RECIPIENT_EMAIL_NOTE = "regeneratesdao@gmail.com"; 
 
-/* =========================================================================
-   OPTIONAL: SAVE PHOTOS DIRECTLY TO GOOGLE DRIVE (so you have a visible
-   folder of every submission, not just an email attachment)
-   -------------------------------------------------------------------------
-   A static site can't talk to Google Drive directly without exposing a key,
-   so the safe route is a small Google Apps Script "Web App" — it runs under
-   your own Google account's permission, so no credentials ever touch this
-   frontend code.
 
-   HOW TO SET THIS UP (10 minutes, no billing required):
-   1. Create a Google Drive folder for RegenCon photos. Copy its ID from the
-      URL (the string after /folders/).
-   2. Optional but recommended: create a Google Sheet to log submissions
-      (columns: Date, Name, Email, Caption, Photo Link). Copy its ID from
-      the URL (the string after /d/ and before /edit).
-   3. Go to script.google.com → New project. Paste this code in:
-
-        function doPost(e) {
-          var folder = DriveApp.getFolderById('YOUR_FOLDER_ID');
-          var data = e.parameter;
-          var bytes = Utilities.base64Decode(data.fileData);
-          var blob = Utilities.newBlob(bytes, data.fileType, data.fileName);
-          var file = folder.createFile(blob);
-          file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-
-          var sheet = SpreadsheetApp.openById('1R_sOKTDUiCYW8FnjD9Z1JC1NV1iC8dV1Mn87wOTyukM').getActiveSheet();
-          sheet.appendRow([new Date(), data.name, data.email, data.caption, file.getUrl()]);
-
-          return ContentService.createTextOutput(JSON.stringify({ success: true, url: file.getUrl() }))
-            .setMimeType(ContentService.MimeType.JSON);
-        }
-
-   4. Replace YOUR_FOLDER_ID and YOUR_SHEET_ID with the IDs from steps 1–2.
-   5. Click Deploy → New deployment → type "Web app". Set "Execute as: Me"
-      and "Who has access: Anyone". Deploy, then copy the Web App URL.
-   6. Paste that URL below as GOOGLE_APPS_SCRIPT_URL.
-
-   When this is set, uploads are saved straight to that Drive folder AND
-   still logged to your Sheet — leave it blank to just use Web3Forms email
-   above instead. You can use either one, or both.
-   ========================================================================= */
 const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz56_ixnzyVVJ6yqPVV7PnxiPqAvDujAtITOzPSNlmZyhLRxSv6RgqKlG2f1VC9U-SUUA/exec"; 
 
 
